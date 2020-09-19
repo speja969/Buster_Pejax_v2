@@ -72,6 +72,10 @@ cp ~/Buster_Pejax_v2/scripts/screeny ~/.scripts
 ## script for reinstall youtube-dl
 cp ~/Buster_Pejax_v2/scripts/reinstall_youtube-dl.sh ~/.scripts
 
+## Geany theme settings
+cp ~/Buster_Pejax_v2/scripts/settings_geany ~/.scripts
+sudo ./settings_geany
+
 ## obmenu-generator
 cp ~/Buster_Pejax_v2/scripts/obmenu-generator.sh ~/.scripts
 
@@ -101,6 +105,13 @@ cd ~/projects/debian-openbox/10_openbox_conky
 sudo ./install.sh
 
 cd ~/projects/debian-openbox/config_shortcut-kill-x
+sudo ./install.sh
+
+cd ~/projects/debian-openbox/10_openbox_nomacs-viewer
+sudo ./install.sh
+sudo chmod --recursive 777 ~/.config/nomacs
+
+cd ~/projects/debian-openbox/config_disable-services
 sudo ./install.sh
 
 # Copy wallpapers folderes
