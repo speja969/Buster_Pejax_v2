@@ -1,4 +1,4 @@
-## **Buster Pejax** (instructions in Serbian)
+## **Buster Pejax v2** (instructions in Serbian)
 ### *Debian Buster sa OpenBox WM*
 
 1. Potrebno je prvo skinuti sa Debianovog sajta ISO instalacioni fajl:
@@ -14,16 +14,16 @@
 _` sudo apt update && sudo apt full-upgrade`_
 1. instaliranje git-a  
 _`sudo apt install git`_
-1. kloniranje git repozitorijuma Buster_Pejax  
-_`git clone https://github.com/speja969/Buster_Pejax.git`_
+1. kloniranje git repozitorijuma Buster_Pejax_v2  
+_`git clone https://github.com/speja969/Buster_Pejax_v2.git`_
 1. promena aktivnog direktorijuma  
-_`cd Buster_Pejax`_
-1. maksimalno podizanje ovlašćenja pristupa repozitorijumu Buster_Pejax rekurzivno  
+_`cd Buster_Pejax_v2`_
+1. maksimalno podizanje ovlašćenja pristupa repozitorijumu Buster_Pejax_v2 rekurzivno  
 _`sudo chmod --recursive 777 .`_
 1. promena aktivnog direktorijuma  
 _`cd scripts`_
-1. Startovanje skripte _Buster_Pejax.sh_  
-_`sudo ./Buster_Pejax.sh`_
+1. Startovanje skripte _Buster_Pejax_v2.sh_  
+_`sudo ./Buster_Pejax_v2.sh`_
 1. Restart  
 _`sudo reboot`_
 1. Posle restarta potrebno je u konfiguracionim fajlovima **ncmpcpp** (_`~/.mpd/mpd.conf`_ i _`~/.ncmpcpp/config`_)  
