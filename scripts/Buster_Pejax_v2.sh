@@ -57,8 +57,8 @@ sudo chmod --recursive 777 ~/bin
 
 ## instalacija ncmpcpp
 sudo apt install -y mpd ncmpcpp
-cp ~/Buster_Pejax_v2/.ncmpcpp ~/
-cp ~/Buster_Pejax_v2/.mpd ~/
+cp -R ~/Buster_Pejax_v2/.ncmpcpp ~/
+cp -R ~/Buster_Pejax_v2/.mpd ~/
 sudo chmod -R 777 ~/.mpd
 sudo chmod -R 777 ~/.ncmpcpp
 echo "Exec=x-terminal-emulator -T 'ncmpcpp' -e ncmpcpp" > /tmp/ncmpcpp_replacement
