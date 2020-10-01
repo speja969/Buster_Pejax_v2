@@ -15,7 +15,10 @@ sudo apt-get update
 
 sudo apt-get -t buster-backports install -y micro
 
-sudo apt-get install -y openbox obmenu obconf rxvt-unicode mousepad compton compton-conf firefox-esr pcmanfm tint2 menu pulseaudio numlockx pavucontrol mlocate lxappearance vlc arandr apt-file synaptic firmware-linux firmware-linux-nonfree doublecmd-common xutils mesa-utils xarchiver htop disk-manager sysstat acpi hardinfo hddtemp wicd k3b i3lock aptitude gnome-disk-utility python3-pip python-pip ttf-mscorefonts-installer fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder font-manager ranger geany gdebi lightdm fbxkb mpv curl gmrun xscreensaver galternatives pnmixer sxiv scrot xsettingsd ffmpeg git qbittorrent wmctrl
+sudo apt-get install -y openbox obmenu obconf rxvt-unicode mousepad compton compton-conf firefox-esr tint2 menu pulseaudio numlockx pavucontrol mlocate lxappearance vlc arandr apt-file synaptic firmware-linux firmware-linux-nonfree doublecmd-common xutils mesa-utils xarchiver htop disk-manager sysstat acpi hardinfo hddtemp wicd k3b i3lock aptitude gnome-disk-utility python3-pip python-pip ttf-mscorefonts-installer fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder font-manager ranger geany gdebi lightdm fbxkb mpv curl gmrun xscreensaver galternatives pnmixer sxiv scrot xsettingsd ffmpeg git qbittorrent wmctrl
+
+sudo apt install pcmanfm-qt --no-install-recommends
+sudo apt autoremove
 
 cp -R ~/Buster_Pejax_v2/.config ~/
 
