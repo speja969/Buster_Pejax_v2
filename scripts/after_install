@@ -8,3 +8,11 @@
 
 ## sudo geany /etc/sudoers
 ## speja ALL=(ALL) NOPASSWD: ALL
+
+
+## install KVANTUM (za premošćivanje tema za QT programe)
+# sudo apt install qt5-style-kvantum qt5-style-kvantum-themes
+# sudo su
+# echo "export QT_STYLE_OVERRIDE=kvantum" >> /etc/environment
+# exit
+# restart
