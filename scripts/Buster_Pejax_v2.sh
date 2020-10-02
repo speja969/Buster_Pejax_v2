@@ -45,6 +45,10 @@ sudo sed -i 's/<allow_active>auth_admin/<allow_active>yes/' /usr/share/polkit-1/
 # korekcija autorizacije za doublecmd
 sudo sed -i 's/<allow_active>auth_admin_keep/<allow_active>yes/' /usr/share/polkit-1/actions/org.doublecmd.root.policy
 
+# korekcija autorizacije za disk-manager
+#sudo sed -i 's/<allow_active>auth_admin_keep/<allow_active>yes/' /usr/share/polkit-1/actions/org.gnome.gparted.policy
+
+
 sudo chmod 777 ~/keyboard.sh
 
 ## debinfo -- prikaz resursa pri otvaranju terminala
@@ -155,4 +159,8 @@ echo "Exec=x-terminal-emulator -T 'ranger task manager' -e ranger" > /tmp/ranger
 sudo sed -i "s/^.*Exec=ranger.*$/$(cat /tmp/ranger_replacement)/" /usr/share/applications/ranger.desktop
 
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
+
+#echo "Exec=su-to-root -X -c /usr/sbin/disk-manager" > /tmp/disk-manager_replacement
+
+#sudo sed -i "s/^.*Exec=/usr/sbin/disk-manager.*$/$(cat /tmp/disk-manager_replacement)/" /usr/share/applications/disk-manager.desktop
 
