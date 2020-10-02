@@ -101,7 +101,7 @@
 		</item>
 		<item label="Disk Manager">
 			<action name="Execute">
-				<execute>su-to-root -X -c /usr/sbin/disk-manager</execute>
+				<execute>/usr/sbin/disk-manager</execute>
 			</action>
 		</item>
 		<item label="Reconfigure">
