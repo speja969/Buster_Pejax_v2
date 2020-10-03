@@ -160,7 +160,6 @@ sudo sed -i "s/^.*Exec=ranger.*$/$(cat /tmp/ranger_replacement)/" /usr/share/app
 
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
 
-#echo "Exec=su-to-root -X -c /usr/sbin/disk-manager" > /tmp/disk-manager_replacement
-
-#sudo sed -i "s/^.*Exec=/usr/sbin/disk-manager.*$/$(cat /tmp/disk-manager_replacement)/" /usr/share/applications/disk-manager.desktop
+cp -R ~/Buster_Pejax_v2/ext ~/.urxvt/
+sudo chmod -R 777 ~/.urxvt
 
