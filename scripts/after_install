@@ -1,3 +1,9 @@
+## provera da aktivni $USER ima potpuna ovašćenja
+# echo $HOME
+# echo $USER
+# sudo chown -R $USER:$USER $HOME
+# sudo chmod -R 700 $HOME
+
 ## posle instalacije dodati:
 ## sudo geany ~/.bashrc
 ## export PATH=$PATH:/opt
