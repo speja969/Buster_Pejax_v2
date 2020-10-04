@@ -160,7 +160,6 @@ sudo sed -i "s/^.*Exec=ranger.*$/$(cat /tmp/ranger_replacement)/" /usr/share/app
 
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
 
-mkdir ~/.urxvt/ext
-cp -R ~/Buster_Pejax_v2/ext ~/.urxvt/ext/
+cp -R ~/Buster_Pejax_v2/ext/ ~/.urxvt/
 sudo chmod -R 777 ~/.urxvt
 
