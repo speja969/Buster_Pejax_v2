@@ -462,7 +462,7 @@
           <enabled>false</enabled>
           <name>File Manager</name>
         </startupnotify>
-        <command>pcmanfm</command>
+        <command>pcmanfm-qt</command>
       </action>
     </keybind>    
     <keybind key="W-v">
