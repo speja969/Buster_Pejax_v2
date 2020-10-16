@@ -160,6 +160,10 @@ sudo sed -i "s/^.*Exec=ranger.*$/$(cat /tmp/ranger_replacement)/" /usr/share/app
 
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
 
-cp -R ~/Buster_Pejax_v2/ext/ ~/.urxvt/
-sudo chmod -R 777 ~/.urxvt
+mkdir -p ~/.urxvt/ext
+cp -p ~/Buster_Mibox/ext/* ~/.urxvt/ext/
+
+sudo chown -R $(logname):$(logname) /home/$(logname)/
+find /home/$(logname) -name '.*' | xargs sudo chown $(logname):$(logname)
+find /home/$(logname) -type f | xargs sudo chmod 700
 
