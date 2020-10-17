@@ -1,0 +1,5 @@
+# sudo apt install nvidia-detect
+# nvidia-detect   # proverava koja graficka kartica je instalirana i predlaze verziju drajvera
+# sudo apt install nvidia-driver (xxx)
+# ako su fontovi posle instalacije drajvera u QT programima premali:
+# sudo apt install qt5ct  # u njemu podesimo fontove kasnije
