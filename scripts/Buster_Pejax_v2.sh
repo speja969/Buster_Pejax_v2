@@ -20,8 +20,8 @@ sudo apt-get -t buster-backports install -y firmware-misc-nonfree
 
 sudo apt-get install -y openbox obmenu obconf rxvt-unicode mousepad apt-rdepends compton compton-conf firefox-esr tint2 menu xsel mirage pulseaudio numlockx pavucontrol mlocate lxappearance vlc arandr apt-file synaptic doublecmd-common xutils mesa-utils xarchiver htop disk-manager sysstat acpi hardinfo hddtemp wicd xfburn gnome-disk-utility python3-pip python-pip ttf-mscorefonts-installer fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder font-manager ranger geany gdebi lightdm fbxkb mpv curl gmrun xscreensaver galternatives pnmixer sxiv scrot xsettingsd ffmpeg git wmctrl
 
-sudo apt install qbittorrent --no-install-recommends
-sudo apt install pcmanfm-qt --no-install-recommends
+sudo apt install -y qbittorrent --no-install-recommends
+sudo apt install -y pcmanfm-qt --no-install-recommends
 sudo apt autoremove
 
 cp -R ~/Buster_Pejax_v2/.config ~/
