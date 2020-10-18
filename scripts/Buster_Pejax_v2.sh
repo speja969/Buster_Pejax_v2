@@ -45,10 +45,6 @@ sudo sed -i 's/<allow_active>auth_admin/<allow_active>yes/' /usr/share/polkit-1/
 # korekcija autorizacije za doublecmd
 sudo sed -i 's/<allow_active>auth_admin_keep/<allow_active>yes/' /usr/share/polkit-1/actions/org.doublecmd.root.policy
 
-# korekcija autorizacije za disk-manager
-#sudo sed -i 's/<allow_active>auth_admin_keep/<allow_active>yes/' /usr/share/polkit-1/actions/org.gnome.gparted.policy
-
-
 sudo chmod 777 ~/keyboard.sh
 
 ## debinfo -- prikaz resursa pri otvaranju terminala
@@ -161,7 +157,7 @@ sudo sed -i "s/^.*Exec=ranger.*$/$(cat /tmp/ranger_replacement)/" /usr/share/app
 sudo sed -i 's!Terminal=true!Terminal=false!' /usr/share/applications/ranger.desktop
 
 mkdir -p ~/.urxvt/ext
-cp -p ~/Buster_Mibox/ext/* ~/.urxvt/ext/
+cp -p ~/Buster_Pejax_v2/ext/* ~/.urxvt/ext/
 
 sudo chown -R $(logname):$(logname) /home/$(logname)/
 find /home/$(logname) -name '.*' | xargs sudo chown $(logname):$(logname)
