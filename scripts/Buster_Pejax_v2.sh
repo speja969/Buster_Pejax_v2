@@ -83,7 +83,6 @@ cp ~/Buster_Pejax_v2/scripts/reinstall_youtube-dl.sh ~/.scripts
 cp ~/Buster_Pejax_v2/scripts/settings_geany ~/.scripts
 cd ~/.scripts
 sudo ./settings_geany
-cp ~/Buster_Pejax_v2/dotfiles/geany.conf ~/.config/geany
 sudo chmod 777 ~/.config/geany/geany.conf
 
 ## obmenu-generator
