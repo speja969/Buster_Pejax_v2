@@ -99,9 +99,9 @@
 				<execute>obconf</execute>
 			</action>
 		</item>
-		<item label="Disk Manager">
+		<item label="Disks">
 			<action name="Execute">
-				<execute>/usr/sbin/disk-manager</execute>
+				<execute>gnome-disks</execute>
 			</action>
 		</item>
 		<item label="Reconfigure">
