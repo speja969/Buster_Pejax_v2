@@ -146,7 +146,7 @@ sudo sed -i 's!#background=!background=/usr/share/images/desktop-base/lightdm_lo
 sudo chmod --recursive 777 ~/.config
 
 ## setting default text editor
-xdg-mime default pcmanfm.desktop inode/directory
+xdg-mime default pcmanfm-qt.desktop inode/directory
 
 
 ## settings htop.desktop & ranger.desktop files
