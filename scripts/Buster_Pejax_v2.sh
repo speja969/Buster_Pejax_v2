@@ -14,8 +14,9 @@ sudo apt-get install -y software-properties-common && sudo apt-add-repository co
 sudo apt-get update
 
 sudo apt-get -t buster-backports install -y micro
+sudo apt-get -t buster-backports install -y firmware-misc-nonfree
 
-sudo apt-get install -y openbox obmenu obconf rxvt-unicode mousepad apt-rdepends compton compton-conf firefox-esr tint2 menu xsel pulseaudio numlockx pavucontrol mlocate lxappearance vlc arandr apt-file synaptic firmware-linux firmware-linux-nonfree firmware-misc-nonfree doublecmd-common xutils mesa-utils xarchiver htop disk-manager sysstat acpi hardinfo hddtemp wicd xfburn gnome-disk-utility python3-pip python-pip ttf-mscorefonts-installer fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder font-manager ranger geany gdebi lightdm fbxkb mpv curl gmrun xscreensaver galternatives pnmixer sxiv scrot xsettingsd ffmpeg git wmctrl
+sudo apt-get install -y openbox obmenu obconf rxvt-unicode mousepad apt-rdepends compton compton-conf firefox-esr tint2 menu xsel pulseaudio numlockx pavucontrol mlocate lxappearance vlc arandr apt-file synaptic firmware-linux firmware-linux-nonfree doublecmd-common xutils mesa-utils xarchiver htop disk-manager sysstat acpi hardinfo hddtemp wicd xfburn gnome-disk-utility python3-pip python-pip ttf-mscorefonts-installer fonts-ubuntu fonts-ubuntu-console suckless-tools simplescreenrecorder font-manager ranger geany gdebi lightdm fbxkb mpv curl gmrun xscreensaver galternatives pnmixer sxiv scrot xsettingsd ffmpeg git wmctrl
 
 sudo apt install qbittorrent --no-install-recommends
 sudo apt install pcmanfm-qt --no-install-recommends
