@@ -77,9 +77,9 @@
 		<menu execute="/usr/bin/obamenu" id="applications-menu" label="Applications"/>
 		<separator/>
 		<separator/>
-		<item label="VLC Player">
+		<item label="MPV Player">
 			<action name="Execute">
-				<execute>vlc</execute>
+				<execute>mpv --player-operation-mode=pseudo-gui</execute>
 			</action>
 		</item>
 		<item label="ncmpcpp">
