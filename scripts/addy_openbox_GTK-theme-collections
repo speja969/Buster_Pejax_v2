@@ -1,0 +1,20 @@
+#!/bin/bash
+
+sudo mkdir /home/$(logname)/.themes  
+sudo chown $(logname):$(logname) /home/$(logname)/.themes
+sudo chmod 777 /home/$(logname)/.themes
+cd /tmp
+sudo git clone https://github.com/addy-dclxvi/openbox-theme-collections.git
+cd openbox-theme-collections
+sudo chown -R $(logname):$(logname) /tmp/openbox-theme-collections/*
+sudo cp -R /tmp/openbox-theme-collections/* /home/$(logname)/.themes/
+
+cd /tmp
+git clone https://github.com/addy-dclxvi/gtk-theme-collections.git
+cd gtk-theme-collections
+sudo chown -R $(logname):$(logname) /tmp/gtk-theme-collections/*
+sudo cp -R /tmp/gtk-theme-collections/* /home/$(logname)/.themes/
+
+sudo chown -R $(logname):$(logname) /home/$(logname)/.themes
+
+sudo rm -rf /tmp/*
